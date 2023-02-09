@@ -10,15 +10,14 @@ body{
   justify-content: center;
 }
 .container{
-  width: 42%;
-  margin-top: 100px;
+  width: 600px;
+  margin-top: 6rem;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   border-radius: 10px;
   overflow: hidden;
 }
 .white{
   background-color: white;
-
 }
 .white, .box1, .box2{
   padding: 30px;
@@ -72,4 +71,26 @@ ul{
 span{
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.44);
+}
+@media (max-width: 650px){
+  .container{
+    width: 350px;
+    margin-top: 3rem;
+  }
+  .green{
+    flex-direction: column;
+  }
+  .white{
+    padding-right: 1.5rem;
+  }
+  .box2{
+    text-align: center;
+  }
+  .box2 ul{
+    text-align: left;
+    padding-left: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+  }
 }
